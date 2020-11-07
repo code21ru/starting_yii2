@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 
 <?php $form = ActiveForm::begin(); //вызываем виджет Формы. Открывающий тег?>
 <?= $form->field($model, 'name'); // input name?>
-<?= $form->field($model, 'emal'); // input email?>
+<?= $form->field($model, 'email'); // input email?>
 <div class="form-group">
     <?= Html::submitButton('Отправить',['class'=>'btn btn-primary']); ?>
 </div>
