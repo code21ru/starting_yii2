@@ -137,4 +137,14 @@ class SiteController extends Controller
     public function actionSay($message = 'Hello World!'){
         return  $this->render('say',['message' => $message]);
     }
+
+    /**
+     * Displays validated name and email or EntryForm, if they not validated
+     *
+     * @return string
+     */
+    public function actionEntry()
+    {
+
+    }
 }
