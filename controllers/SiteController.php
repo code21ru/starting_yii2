@@ -10,6 +10,9 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+// добавляем нашу модель EntryForm
+use app\models\EntryForm;
+
 class SiteController extends Controller
 {
     /**
