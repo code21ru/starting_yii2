@@ -145,6 +145,15 @@ class SiteController extends Controller
      */
     public function actionEntry()
     {
-
+        // создаем новый объект EntryForm
+        $model = new EntryForm();
+        // проверяем, заполнился ли объект EntryForm данными из массива $_POST и прошли ли они валидацию
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            //условия выполнены, выводим представление entry-confirm
+            return $this->render('entry-confirm', ['model' => $model]);
+        } else {
+            //условия не выполнены, выводим представление entry
+            return $this->render('entry',['model' => $model]);
+        }
     }
 }
