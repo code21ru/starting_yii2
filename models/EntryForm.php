@@ -1,7 +1,7 @@
 <?php
 namespace app\models;
 
-use iyy\base\Model;
+use yii\base\Model;
 /**
  * Class description
  */
